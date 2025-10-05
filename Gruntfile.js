@@ -16,17 +16,32 @@ module.exports = function (grunt) {
         dev: {
         options: {
             patterns: [
-            { match: 'ENDERECO_DO_CSS', replacement: './styles/main.css' },
-            { match: 'ENDERECO_DO_JS',  replacement: '../src/scripts/main.js' }
+            { match: 'ENDERECO_DO_CSS', 
+              replacement: './styles/main.css' 
+            },
+            { match: 'ENDERECO_DO_JS', 
+              replacement: '../src/scripts/main.js'
+            }
             ]
         },
-        files: [{ expand: true, flatten: true, src: ['src/index.html'], dest: 'dev' }]
+        files: [
+          { expand: true, 
+            flatten: true, 
+            src: ['src/index.html'], 
+            dest: 'dev' 
+          }
+        ]
         },
         dist: {
         options: {
             patterns: [
-            { match: 'ENDERECO_DO_CSS', replacement: './styles/main.min.css' },
-            { match: 'ENDERECO_DO_JS',  replacement: './src/scripts/main.min.js'},
+            { 
+              match: 'ENDERECO_DO_CSS', 
+              replacement: './styles/main.min.css'
+            },
+            { match: 'ENDERECO_DO_JS',
+              replacement: './scripts/main.min.js'
+            },
             ]
         },
         files: [{ expand: true, flatten: true, src: ['prebuild/index.html'], dest: 'dist' }]
