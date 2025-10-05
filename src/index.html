@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palpites da Quina - Loteria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Prosto+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
+</head>
+<body>
+    <main>
+    <h1>Palpites da Quina - Loteria</h1>
+
+    <!-- id corrigido: de "'form-sorteador" para "form-sorteador" -->
+    <form id="form-sorteador">
+        <div>
+        <label for="numero-maximo">Sortear 05 dezenas entre 80</label>
+        <!-- máximo fixo e bloqueado -->
+        
+        </div>
+
+        <button type="submit">Sortear números</button>
+    </form>
+
+    <!-- área de resultado -->
+    <section class="resultado" style="display:none; margin-top:16px;">
+        <strong>Boa Sorte!!</strong>
+        <p id="resultado-valor" style="font-size:1.6rem; letter-spacing:4px;"></p>
+    </section>
+    </main>
+
+    <script src="@@ENDERECO_DO_JS"></script>
+</body>
+</html>
